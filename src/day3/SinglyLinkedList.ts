@@ -4,7 +4,7 @@ class Node<T> {
 }
 export default class SinglyLinkedList<T> {
     public length = 0;
-    private head: Node<T> | undefined;
+    public head: Node<T> | undefined;
     private tail: Node<T> | undefined;
     prepend(item: T): void {
         const newNode = new Node(item);
@@ -87,7 +87,14 @@ export default class SinglyLinkedList<T> {
     get(idx: number): T | undefined {
         return this.getNodeAt(idx)?.value;
     }
+
     removeAt(idx: number): T | undefined {
+        console.log('idx', idx)
+        console.log('this.length', this.length)
+        if (idx >= this.length) {
+            return undefined;
+        }
+
         if (idx === 0) {
             const head = this.head;
             const headNext = head?.next;
