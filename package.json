@@ -14,10 +14,10 @@
         "typescript": "^4.7.4"
     },
     "scripts": {
-        "test": "jest DFSGraphList BFSGraphList",
+        "test": "jest LRU",
         "clear": "node ./scripts/clear.js",
         "prettier": "prettier --write ./src",
         "generate": "node ./scripts/generate.js",
-        "day": "echo src/day12"
+        "day": "echo src/day14"
     }
 }

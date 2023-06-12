@@ -19,11 +19,12 @@ module.exports = {
         // "DFSOnBST",
         // "MinHeap",
         // "BFSGraphMatrix",
+        // "DFSGraphList",
+        // "BFSGraphList",
+        // "DijkstraList"
+        "LRU",
         // 
         //  
-        "DFSGraphList",
-        "BFSGraphList",
-        // "LRU",
         // "Trie",
         // "Map",
     ],
